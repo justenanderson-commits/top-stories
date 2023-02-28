@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<SummaryContainer />} />
           <Route path="/article/:id" element={<ArticleContainer />} />
-          {/* <Route path="*" element={<Navigate to="/" />} /> */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>
