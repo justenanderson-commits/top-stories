@@ -1,7 +1,13 @@
 import './FullArticleBanner.css'
 
 const FullArticleBanner = () => {
-  return <div>FullArticleBanner</div>
+  return (
+    <div className="full-article-banner">
+      <h2>Full Headline</h2>
+      <h4>Full abstract</h4>
+      <h5>Section</h5>
+    </div>
+  )
 }
 
 export default FullArticleBanner

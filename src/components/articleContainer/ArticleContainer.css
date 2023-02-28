@@ -1,0 +1,13 @@
+.article-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.home-button{
+  font-weight: 400;
+  padding: .3em;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
