@@ -3,8 +3,10 @@ import './SummaryContainer.css'
 
 
 const SummaryContainer = () => {
-  return <div>
-    Summary Container
+  return <div className="summary-container">
+      <SummaryCard />
+      <SummaryCard />
+      <SummaryCard />
       <SummaryCard />
     </div>
 }
