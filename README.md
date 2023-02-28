@@ -2,7 +2,8 @@
 Summary
 
  - [Deployed app](TBD) 
- - [Front-end repo](https://github.com/justenanderson-commits/top-stories
+ - [Front-end repo](https://github.com/justenanderson-commits/top-stories)
+ - [GitHub Project Board](https://github.com/users/justenanderson-commits/projects/4)
 
 
 ### Landing Page
