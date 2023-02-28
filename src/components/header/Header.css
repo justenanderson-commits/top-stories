@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: center;
+  border: 1px solid grey;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+
+a:visited {
+  color: black;
+}

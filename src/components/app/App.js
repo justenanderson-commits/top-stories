@@ -14,7 +14,6 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        App Component
         <Routes>
           <Route path="/" element={<SummaryContainer />} />
           <Route path="/article/:id" element={<ArticleContainer />} />
