@@ -2,7 +2,8 @@ import Filter from '../filter/Filter'
 import SummaryCard from '../summaryCard/SummaryCard'
 import './SummaryContainer.css'
 
-const SummaryContainer = ({ articles }) => {
+const SummaryContainer = ({ articles, filteredSummaries }) => {
+
   const showSummaries = articles.map((article) => {
     return (
       <SummaryCard
@@ -15,7 +16,7 @@ const SummaryContainer = ({ articles }) => {
 
   return (
     <div className="summary-container">
-      <Filter />
+      <Filter filteredSummaries={filteredSummaries}/>
       {showSummaries}
     </div>
   )
