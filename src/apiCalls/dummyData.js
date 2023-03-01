@@ -75,6 +75,11 @@ const data = {
       ],
       short_url: "https://nyti.ms/3Zw01Ox"
     },
+
+
+
+
+
     {
       section: "business",
       subsection: "economy",
@@ -1755,6 +1760,79 @@ const data = {
       short_url: "https://nyti.ms/3q2W8kk"
     }
   ]
+}
+
+
+
+const singleArticle = {
+  "section": "world",
+  "subsection": "europe",
+  "title": "Scrounging for Tanks for Ukraine, Europe’s Armies Come Up Short",
+  "abstract": "The struggle to deliver on promises to provide Leopard 2 tanks for use against Russian forces has exposed just how unprepared European militaries are.",
+  "url": "https://www.nytimes.com/2023/02/28/world/europe/ukraine-tanks.html",
+  "uri": "nyt://article/5537254d-e2c7-5432-984d-d75bb3661c5d",
+  "byline": "By Erika Solomon, Steven Erlanger and Christopher F. Schuetze",
+  "item_type": "Article",
+  "updated_date": "2023-02-28T07:04:52-05:00",
+  "created_date": "2023-02-28T05:00:32-05:00",
+  "published_date": "2023-02-28T05:00:32-05:00",
+  "material_type_facet": "",
+  "kicker": "",
+  "des_facet": [
+      "Russian Invasion of Ukraine (2022)",
+      "Military Vehicles",
+      "Shortages",
+      "Defense and Military Forces",
+      "Politics and Government",
+      "International Relations"
+  ],
+  "org_facet": [
+      "North Atlantic Treaty Organization"
+  ],
+  "per_facet": [],
+  "geo_facet": [
+      "Europe",
+      "Finland",
+      "Germany",
+      "Netherlands",
+      "Poland",
+      "Spain",
+      "Sweden",
+      "Ukraine"
+  ],
+  "multimedia": [
+      {
+          "url": "https://static01.nyt.com/images/2023/02/27/multimedia/00ukraine-europe-militaries-01-kfpw/00ukraine-europe-militaries-01-kfpw-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1366,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Military personnel at a media event at a base in Swietoszow, Poland in February. The event was to display to the public how the Polish military trains Ukrainian soldiers on the German-made Leopard 2 tanks.",
+          "copyright": "Maciek Nabrdalik for The New York Times"
+      },
+      {
+          "url": "https://static01.nyt.com/images/2023/02/27/multimedia/00ukraine-europe-militaries-01-kfpw/00ukraine-europe-militaries-01-kfpw-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Military personnel at a media event at a base in Swietoszow, Poland in February. The event was to display to the public how the Polish military trains Ukrainian soldiers on the German-made Leopard 2 tanks.",
+          "copyright": "Maciek Nabrdalik for The New York Times"
+      },
+      {
+          "url": "https://static01.nyt.com/images/2023/02/27/multimedia/00ukraine-europe-militaries-01-kfpw/00ukraine-europe-militaries-01-kfpw-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Military personnel at a media event at a base in Swietoszow, Poland in February. The event was to display to the public how the Polish military trains Ukrainian soldiers on the German-made Leopard 2 tanks.",
+          "copyright": "Maciek Nabrdalik for The New York Times"
+      }
+  ],
+  "short_url": "https://nyti.ms/3Zw01Ox"
 }
 
 export default data

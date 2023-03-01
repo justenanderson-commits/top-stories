@@ -1,13 +1,14 @@
 import './SummaryCard.css'
 import { Link } from 'react-router-dom'
 
-const SummaryCard = () => {
+const SummaryCard = ({ headline, published, section }) => {
+  console.log(headline)
   return (
     <Link to="/article/1">
       <div className="summary-card">
-        <h3> Headline </h3>
-        <p> Date and time published</p>
-        <p> Section</p>
+        <h3> { headline } </h3>
+        <p> { published }</p>
+        <p> { section } </p>
       </div>
     </Link>
   )
