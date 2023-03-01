@@ -4,7 +4,7 @@ import './SummaryContainer.css'
 
 const SummaryContainer = ({ articles }) => {
   console.log('Single Article: ', articles[0])
-    const showSummaries = () => {
+    const showSummaries =
       articles.map(article => {
         return <SummaryCard 
           headline={ article.title }
@@ -12,7 +12,7 @@ const SummaryContainer = ({ articles }) => {
           section={ article.section }
         />
       })
-    }
+    
 
   return <div className="summary-container">
       <SummaryCard />
