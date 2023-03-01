@@ -8,11 +8,13 @@ import {
   Route,
   Navigate,
 } from 'react-router-dom'
+import data from '../../apiCalls/dummyData'
 
 function App() {
+  console.log('Data: ', data)
   return (
     <Router>
-      <div className="App">
+      <div className="App"> 
         <Header />
         <Routes>
           <Route path="/" element={<SummaryContainer />} />
