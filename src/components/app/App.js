@@ -10,39 +10,33 @@ import {
 } from 'react-router-dom'
 import data from '../../apiCalls/dummyData'
 import { useState, useEffect } from 'react'
-// import Filter from '../filter/Filter'
 
 function App() {
-  const [ articles, setArticles ] = useState([]) 
+  const [ allArticles, setAllArticles ] = useState([]) 
   const [ filteredArticles, setFilteredArticles ] = useState([]) 
+  let articles
 
-  console.log('Articles array length: ', articles.length)
-  console.log('Filtered articles array length: ', filteredArticles.length)
+console.log('Articles array length: ', allArticles.length)
+console.log('Filtered articles array length: ', filteredArticles.length)
   
   useEffect(() => {
-    if (filteredArticles.length > 0) {
-      //the problem is with this logic
-      // when the filteredArray length is zero, it works
-      // when it's more than zero, it doesn't work
-      // therefore, I just need to set it to zero each time
-      setArticles(filteredArticles)
+    if (allArticles.length) {
+      return
     } else {
-      setArticles(data.results)
-      // this creates an infinite loop setFilteredArticles([])
+      setAllArticles(data.results)
     }
   })
 
   const filteredSummaries = (section) => { 
-    let filtered = articles.filter(article => article.section === section)
+    let filtered = allArticles.filter(article => article.section === section)
     setFilteredArticles(filtered)
   }
 
-  // import the filter
-  // add the filter function here
-  // if the filter function fires, set the articles state to the filtered articles
-  // pass the filtered summaries prop to the filter component
-
-  
+  if (filteredArticles.length > 0) {
+    articles = filteredArticles
+  } else {
+    articles = allArticles
+  }
 
   return (
     <Router>
