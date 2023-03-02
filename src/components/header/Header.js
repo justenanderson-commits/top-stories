@@ -5,7 +5,8 @@ const Header = () => {
   return (
     <div className="header">
       <Link to="/">
-        <h1>New York Times Top Stories</h1>
+        <img src="https://betterstudio.com/wp-content/uploads/2022/11/4-the-new-york-times-logo-SVG-betterstudio.com_.svg" />
+        <p>Top Stories</p>
       </Link>
     </div>
   )

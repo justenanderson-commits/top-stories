@@ -15,9 +15,9 @@ function App() {
   const [allArticles, setAllArticles] = useState([])
   const [filteredArticles, setFilteredArticles] = useState([])
   const [foundArticle, setFoundArticle] = useState({})
-  let articles, endPoint
+  let articles
 
-  useEffect(() => {
+  useEffect(() => { 
     if (allArticles.length) {
       return
     } else {
@@ -27,7 +27,6 @@ function App() {
   })
 
   const findArticle = (headline) => {
-    endPoint = headline.toString().toLowerCase().split(' ').join('-')
     setFoundArticle(articles.find((article) => article.title === headline))
   }
 
@@ -54,7 +53,6 @@ function App() {
                 articles={articles}
                 findArticle={findArticle}
                 filteredSummaries={filteredSummaries}
-                endPoint={endPoint}
               />
             }
           />

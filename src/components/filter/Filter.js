@@ -11,15 +11,17 @@ const Filter = ({ filteredSummaries }) => {
         <label>Filter by section:</label>
         <select>
           <option placeholder="select">select</option>
-          <option value="world">World</option>
-          <option value="business">Business</option>
-          <option value="us">U.S.</option>
           <option value="arts">Arts</option>
-          <option value="nyregion">NY Region</option>
+          <option value="automobiles">Automobiles</option>
+          <option value="books">Books</option>
+          <option value="business">Business</option>
           <option value="dining">Dining</option>
+          <option value="fashion">Fashion</option>
+          <option value="nyregion">NY Region</option>
           <option value="opinion">Opinion</option>
-          <option value="briefing">Briefing</option>
           <option value="podcasts">Podcasts</option>
+          <option value="us">U.S.</option>
+          <option value="world">World</option>
         </select>
       </form>
     </div>

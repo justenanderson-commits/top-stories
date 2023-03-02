@@ -4,7 +4,10 @@
   border: 1px solid grey;
   text-decoration: none;
 }
-
+img {
+  width: 50vw;
+  margin: 3vh 0 -2vh 0;
+}
 a {
   text-decoration: none;
 }
@@ -16,4 +19,8 @@ a:hover {
 
 a:visited {
   color: black;
+}
+
+p {
+  font-size: 1.5em;
 }
