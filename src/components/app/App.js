@@ -6,10 +6,10 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
+  Navigate
 } from 'react-router-dom'
-import data from '../../apiCalls/dummyData'
 import { useState, useEffect } from 'react'
+import getData from '../../apiCalls/apiCalls'
 
 function App() {
   const [allArticles, setAllArticles] = useState([])
@@ -21,15 +21,14 @@ function App() {
     if (allArticles.length) {
       return
     } else {
-      setAllArticles(data.results)
+      getData()
+        .then(data => setAllArticles(data.results))
     }
   })
 
   const findArticle = (headline) => {
     endPoint = headline.toString().toLowerCase().split(' ').join('-')
     setFoundArticle(articles.find((article) => article.title === headline))
-    console.log('Found article: ', foundArticle)
-    return foundArticle
   }
 
   const filteredSummaries = (section) => {
