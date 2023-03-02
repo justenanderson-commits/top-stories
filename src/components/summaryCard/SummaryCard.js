@@ -10,7 +10,7 @@ const SummaryCard = ({ headline, published, section, findArticle }) => {
     <Link to="/article/full-article">
       <div className="summary-card" onClick={(e) => handleClick(headline)}>
         <h3> {headline} </h3>
-        <p> Updated: {published}</p>
+        <p className='updated'> Updated: {published}</p>
       </div>
     </Link>
   )
