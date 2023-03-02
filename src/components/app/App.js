@@ -1,7 +1,7 @@
 import './App.css'
 import Header from '../header/Header'
 import SummaryContainer from '../summaryContainer/SummaryContainer'
-import ArticleContainer from '../articleContainer/ArticleContainer' 
+import ArticleContainer from '../articleContainer/ArticleContainer'
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,13 +12,11 @@ import data from '../../apiCalls/dummyData'
 import { useState, useEffect } from 'react'
 
 function App() {
-  const [ allArticles, setAllArticles ] = useState([]) 
-  const [ filteredArticles, setFilteredArticles ] = useState([]) 
-  let articles
+  const [allArticles, setAllArticles] = useState([])
+  const [filteredArticles, setFilteredArticles] = useState([])
+  const [foundArticle, setFoundArticle] = useState({})
+  let articles, endPoint
 
-console.log('Articles array length: ', allArticles.length)
-console.log('Filtered articles array length: ', filteredArticles.length)
-  
   useEffect(() => {
     if (allArticles.length) {
       return
@@ -27,8 +25,17 @@ console.log('Filtered articles array length: ', filteredArticles.length)
     }
   })
 
-  const filteredSummaries = (section) => { 
-    let filtered = allArticles.filter(article => article.section === section)
+  const findArticle = (headline) => {
+    endPoint = headline.toString().toLowerCase().split(' ').join('-')
+    // console.log('Find article end point: ', endPoint)
+    // foundArticle = articles.find((article) => article.title === headline)
+    setFoundArticle(articles.find((article) => article.title === headline))
+    console.log('Found article: ', foundArticle)
+    return foundArticle
+  }
+
+  const filteredSummaries = (section) => {
+    let filtered = allArticles.filter((article) => article.section === section)
     setFilteredArticles(filtered)
   }
 
@@ -40,11 +47,29 @@ console.log('Filtered articles array length: ', filteredArticles.length)
 
   return (
     <Router>
-      <div className="App"> 
+      <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<SummaryContainer articles= { articles } filteredSummaries={filteredSummaries} />} />
-          <Route path="/article/:id" element={<ArticleContainer />} />
+          <Route
+            path="/"
+            element={
+              <SummaryContainer
+                articles={articles}
+                findArticle={findArticle}
+                filteredSummaries={filteredSummaries}
+                // endPoint={endPoint}
+              />
+            }
+          />
+          <Route
+            // path={`/article/${endPoint}`}
+            path='/article/1'
+            element={
+              <ArticleContainer 
+                foundArticle={foundArticle} 
+              />
+            }
+          />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
