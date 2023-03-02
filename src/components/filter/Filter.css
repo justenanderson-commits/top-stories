@@ -1,5 +1,6 @@
 .filter {
-  align-content: center;
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
   border: 1px solid grey;
   border-radius: 10px;
