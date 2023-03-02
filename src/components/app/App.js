@@ -27,8 +27,6 @@ function App() {
 
   const findArticle = (headline) => {
     endPoint = headline.toString().toLowerCase().split(' ').join('-')
-    // console.log('Find article end point: ', endPoint)
-    // foundArticle = articles.find((article) => article.title === headline)
     setFoundArticle(articles.find((article) => article.title === headline))
     console.log('Found article: ', foundArticle)
     return foundArticle
@@ -57,18 +55,13 @@ function App() {
                 articles={articles}
                 findArticle={findArticle}
                 filteredSummaries={filteredSummaries}
-                // endPoint={endPoint}
+                endPoint={endPoint}
               />
             }
           />
           <Route
-            // path={`/article/${endPoint}`}
-            path='/article/1'
-            element={
-              <ArticleContainer 
-                foundArticle={foundArticle} 
-              />
-            }
+            path="/article/full-article"
+            element={<ArticleContainer foundArticle={foundArticle} />}
           />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
