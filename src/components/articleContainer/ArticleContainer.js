@@ -4,7 +4,6 @@ import FullArticleText from '../fullArticleText/FullArticleText'
 import { Link } from 'react-router-dom'
 
 const ArticleContainer = ({ foundArticle }) => {
-  console.log('Article container found article: ', foundArticle)
 
   return (
     <div className="article-container">
