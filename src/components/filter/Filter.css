@@ -1,8 +1,11 @@
 .filter {
-  align-content: center;
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
-  border: 1px solid grey;
-  border-radius: 10px;
+  background-color: rgb(93,120,145);
+  border-radius: 5px;
   width: 50vw;
   height: 5vh;
+  color: white;
+  font-weight: bold;
 }
