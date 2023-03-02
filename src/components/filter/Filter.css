@@ -1,0 +1,8 @@
+.filter {
+  align-content: center;
+  justify-content: space-evenly;
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 50vw;
+  height: 5vh;
+}

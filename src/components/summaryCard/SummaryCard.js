@@ -1,13 +1,16 @@
 import './SummaryCard.css'
 import { Link } from 'react-router-dom'
 
-const SummaryCard = () => {
+const SummaryCard = ({ headline, published, section, findArticle }) => {
+  const handleClick = (headline) => {
+    findArticle(headline)
+  }
+
   return (
-    <Link to="/article/1">
-      <div className="summary-card">
-        <h3> Headline </h3>
-        <p> Date and time published</p>
-        <p> Section</p>
+    <Link to="/article/full-article">
+      <div className="summary-card" onClick={(e) => handleClick(headline)}>
+        <h3> {headline} </h3>
+        <p> Updated: {published}</p>
       </div>
     </Link>
   )
