@@ -18,7 +18,7 @@ const ArticleContainer = ({ foundArticle }) => {
           </Link>
         </div>
         <div className="article-image">
-          <img src={foundArticle.multimedia[1].url} width="100px" />
+          <img src={foundArticle.multimedia[1].url} alt={foundArticle.multimedia[1].caption}/>
           <div className="image-caption">
             {' '}
             {foundArticle.multimedia[1].caption}{' '}
