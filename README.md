@@ -1,16 +1,15 @@
 # NY Times Top Stories
+This application provides users the ability to easily scroll through the New York Times top stories. By clicking the story card, they can view additional details about the story and then find a link to the full article (which they can access with a New York Times subscription).
+
 Summary
 
- - [Deployed app](TBD) 
  - [Front-end repo](https://github.com/justenanderson-commits/top-stories)
  - [GitHub Project Board](https://github.com/users/justenanderson-commits/projects/4)
 
 
-### Landing Page
-![NY Times Top Stories Landing Page](TBD)
+### App Preview
+![Mar-03-2023 10-16-45](https://user-images.githubusercontent.com/104015966/222785507-e4abd613-c74a-4af1-8d4c-1cb3eb8ba1dc.gif)
 
-### Article View
-![Single Article View](TBD)
 
 ## Contributor
 - [Justen Anderson](https://github.com/justenanderson-commits)
