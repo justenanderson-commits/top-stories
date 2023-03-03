@@ -1,8 +1,3 @@
-
-/* * {
-  border: 1px solid grey
-} */
-
 .abstract {
   text-align: left;
   font-weight: 300;
@@ -17,10 +12,6 @@
 .article-container h4 {
   color: grey;
 }
-/* 
-.article-details{
-  width: 40vw;
-} */
 
 .article-image {
   width: 40vw;
@@ -28,6 +19,8 @@
 
 .article-image img{
   width: 40vw;
+  padding: 2px;
+  border: 1px solid black;
 }
 .image-caption {
   margin-top: 10px;
