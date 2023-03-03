@@ -1,6 +1,5 @@
 import './Filter.css'
 
-// Update the filter select drop down to be populated dynamically
 const Filter = ({ filteredSummaries }) => {
   return (
     <div className="filter">

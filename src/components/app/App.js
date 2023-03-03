@@ -6,7 +6,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
+  Navigate,
 } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import getData from '../../apiCalls/apiCalls'
@@ -17,12 +17,11 @@ function App() {
   const [foundArticle, setFoundArticle] = useState({})
   let articles
 
-  useEffect(() => { 
+  useEffect(() => {
     if (allArticles.length) {
       return
     } else {
-      getData()
-        .then(data => setAllArticles(data.results))
+      getData().then((data) => setAllArticles(data.results))
     }
   })
 
