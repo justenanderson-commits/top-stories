@@ -19,6 +19,8 @@
 
 .article-image img{
   width: 40vw;
+  padding: 2px;
+  border: 1px solid black;
 }
 .image-caption {
   margin-top: 10px;
