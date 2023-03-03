@@ -12,14 +12,14 @@ const Filter = ({ filteredSummaries }) => {
         <select>
           <option placeholder="select">select</option>
           <option value="arts">Arts</option>
-          <option value="automobiles">Automobiles</option>
-          <option value="books">Books</option>
-          <option value="business">Business</option>
-          <option value="dining">Dining</option>
-          <option value="fashion">Fashion</option>
+          <option value="crosswords">Crosswords</option>
+          <option value="briefing">Briefing</option>
+          <option value="movies">Movies</option>
           <option value="nyregion">NY Region</option>
           <option value="opinion">Opinion</option>
           <option value="podcasts">Podcasts</option>
+          <option value="sports">Sports</option>
+          <option value="technology">Technology</option>
           <option value="us">U.S.</option>
           <option value="world">World</option>
         </select>

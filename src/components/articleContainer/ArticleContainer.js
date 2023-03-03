@@ -13,16 +13,10 @@ const ArticleContainer = ({ foundArticle }) => {
           </h4>
           <h4> {foundArticle.byline} </h4>
           <h4>Updated: {foundArticle.updated_date}</h4>
-
-          <Link
-            to={foundArticle.url}
-            target="_blank"
-            
-          >
-                    <div className="full-article-button">Read Full Article</div>
+          <Link to={foundArticle.url} target="_blank">
+            <div className="full-article-button">Read Full Article</div>
           </Link>
         </div>
-
         <div className="article-image">
           <img src={foundArticle.multimedia[1].url} width="100px" />
           <div className="image-caption">
