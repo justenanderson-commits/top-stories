@@ -3,6 +3,7 @@ This application provides users the ability to easily scroll through the New Yor
 
 Summary
 
+ - [Deployed Site](https://top-stories-virid.vercel.app/)
  - [Front-end repo](https://github.com/justenanderson-commits/top-stories)
  - [GitHub Project Board](https://github.com/users/justenanderson-commits/projects/4)
 
@@ -37,4 +38,7 @@ Summary
 
 ## Documentation
 ### Excalidraw Wireframe and Component Architecture
-TBD
+<img width="856" alt="Screenshot 2023-03-03 at 3 21 13 PM" src="https://user-images.githubusercontent.com/104015966/222842033-70b6cc3d-999f-4809-8d02-50dd68d4ea1b.png">
+<img width="1089" alt="Screenshot 2023-03-03 at 3 22 02 PM" src="https://user-images.githubusercontent.com/104015966/222842053-92257af7-a291-455b-9479-93e28f62a03f.png">
+
+
