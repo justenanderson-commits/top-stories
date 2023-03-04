@@ -1,7 +1,8 @@
 import './DropDown.css'
 
-const DropDown = () => {
-  return <option className="drop-down">Drop Down</option>
+const DropDown = ({section}) => {
+  console.log('Section :', section)
+  return <option className="drop-down" value={section}> Section: {section} </option>
 }
 
 export default DropDown
