@@ -31,6 +31,7 @@ function App() {
 
   const filteredSummaries = (section) => {
     let filtered = allArticles.filter((article) => article.section === section)
+    console.log('Filtered: ', filtered)
     setFilteredArticles(filtered)
   }
 
@@ -51,6 +52,7 @@ function App() {
               <SummaryContainer
                 articles={articles}
                 findArticle={findArticle}
+                filteredArticles={filteredArticles}
                 filteredSummaries={filteredSummaries}
               />
             }
