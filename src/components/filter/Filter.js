@@ -1,6 +1,14 @@
 import './Filter.css'
 
 const Filter = ({ filteredSummaries }) => {
+  // const dynamicSections = filteredSummaries.map(article => article.section)
+  // console.log('Dynamic Sections: ', dynamicSections)
+
+  // Here I want an array of strings with the the names of the sections in today's top stories.
+  // Then I can map over that array, dynamically adding each section name as the value and the visible text for each option in my Select dropdown.
+  // The filter drop down may have to be a new component for that to work. 
+
+
   return (
     <div className="filter">
       <form
