@@ -5,3 +5,8 @@
   grid-gap: 20px;
   justify-items: center;
 }
+
+.summary-container a:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.05);
+}

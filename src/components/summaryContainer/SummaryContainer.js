@@ -16,7 +16,7 @@ const SummaryContainer = ({ articles, filteredSummaries, findArticle }) => {
 
   return (
     <div className="summary-container">
-      <Filter filteredSummaries={filteredSummaries} />
+      <Filter filteredSummaries={filteredSummaries} articles={articles} />
       {showSummaries}
     </div>
   )
