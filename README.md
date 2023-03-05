@@ -1,5 +1,5 @@
 # NY Times Top Stories
-This application provides users the ability to easily scroll through the New York Times top stories. By clicking the story card, they can view additional details about the story and then find a link to the full article (which they can access with a New York Times subscription).
+This application provides users the ability to easily scroll through the New York Times top stories. By clicking the story card, they can view additional details about the story and then find a link to the full article (which they can access with a New York Times subscription). Users can filter articles by their sections, which are dynamically populated. (So they'll only see the sections with 'Top Stories' articles at that time.)
 
 Summary
 
