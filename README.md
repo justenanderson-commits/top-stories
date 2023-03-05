@@ -9,7 +9,7 @@ Summary
 
 
 ### App Preview
-![Mar-03-2023 15-29-29](https://user-images.githubusercontent.com/104015966/222843418-e8eabd2f-4dd6-4220-bd90-e3db52fb9b3b.gif)
+![Mar-05-2023 08-59-48](https://user-images.githubusercontent.com/104015966/222971492-46b70887-d4c8-4b7f-be7c-8c5c3769f780.gif)
 
 ### Lighthouse Accessibility Score
 ![Screenshot 2023-03-03 at 10 20 37 AM](https://user-images.githubusercontent.com/104015966/222786361-244c7445-7aa1-42e8-b0c8-086dc774f477.png)
